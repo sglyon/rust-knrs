@@ -1,0 +1,15 @@
+[package]
+name = "knrs"
+version = "0.1.0"
+authors = ["Spencer Lyon <spencerlyon2@gmail.com>"]
+
+[dependencies]
+quick-csv = "0.1"
+csv = "0.14"
+glob = "0.2.11"
+pretty-bytes = "0.1.0"
+scoped_threadpool = "0.1.7"
+
+[lib]
+name = "knrs"
+path = "src/lib.rs"
