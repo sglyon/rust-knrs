@@ -1,6 +1,6 @@
 [package]
 name = "knrs"
-version = "0.1.1"
+version = "0.2.0"
 authors = ["Spencer Lyon <spencerlyon2@gmail.com>"]
 description = "Utilities for working with the Kilts Nielsen retail scanner (KNRS) data"
 license-file = "./LICENSE.md"
