@@ -118,10 +118,9 @@ pub trait KRNSMovementOperator {
             let mut pool = Pool::new(threads);
             pool.scoped(|scoped| {
                 for p in paths {
-                    let p2 = self.summary_path(&p);
-                    let (mut input, mut output) = pre_summarize(p, &p2);
-
                     scoped.execute(move || {
+ 	                let p2 = self.summary_path(&p);
+                        let (mut input, mut output) = pre_summarize(p, &p2);
                         self.summarize_one_file(&mut input, &mut output);
                     });
                 }
